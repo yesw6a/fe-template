@@ -1,9 +1,9 @@
 import type { Config } from 'tailwindcss'
 
 export default {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'selector', // or 'class'
   theme: {
     accentColor: ({ theme }) => ({
       ...theme('colors'),
@@ -1062,4 +1062,3 @@ export default {
   },
   plugins: [],
 } satisfies Config
-
